@@ -1,0 +1,23 @@
+int countingValleys(int steps, string path) {
+    int height=0;
+    int valley=0;
+    for (int i=0;i<steps;i++)
+    {
+        if(path[i]=='U')
+        {
+            height++;
+            
+            if(height==0)
+         {
+            valley++;
+         }
+        }
+        
+        else if(path[i]=='D')
+        {
+            height--;
+        }
+    }
+    return valley;
+
+}
