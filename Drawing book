@@ -1,3 +1,15 @@
-int pageCount(int n, int p) {
+nt pageCount(int n, int p) {
+ 
+    
+    int turnsFromFront = p / 2;
+    
+    
+    int turnsFromBack = n / 2 - p / 2;
+    
+    
+    return min(turnsFromFront, turnsFromBack);
+
+    
+    
 
 }
